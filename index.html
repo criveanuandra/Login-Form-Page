@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section>
+      <div class="login-form-container">
+        <div class="login-title-container">
+          <h1 class="login-title">Login Form</h1>
+        </div>
+
+        <form class="login-form" onsubmit="return false">
+          <div class="email-container">
+            <i class="fa fa-envelope"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="email-input"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="password-container">
+            <i class="fa fa-key"></i>
+            <i id="showPassword" class="fa fa-eye active" onclick="showPassword()"></i>
+            <i id="hidePassword" class="fa fa-eye-slash" onclick="hidePassword()"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="password-input"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div class="forgot-password-container">
+            <a href="./about.html" class="forgot-password">Forgot Password?</a>
+          </div>
+
+          <div class="login-button-container">
+            <button onclick="onLogin()" class="login-button">LOGIN</button>
+          </div>
+
+          <div class="social-login-container-title">
+            <p class="social-login-title">Or login with</p>
+          </div>
+          <div class="social-buttons-container">
+            <div class="facebook-button-container">
+              <button class="facebook-button"><i class="fa fa-facebook"></i> Facebook</button>
+            </div>
+            <div class="instagram-button-container">
+              <button class="instagram-button"><i class="fa fa-instagram"></i> Instagram</button>
+            </div>
+          </div>
+          <div class="signup-title-container">
+            <p>Don't have account? <a href="#signup">Signup Now</a></p>
+          </div>
+        </form>
+        <div id="result"></div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
